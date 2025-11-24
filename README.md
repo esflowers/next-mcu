@@ -2,7 +2,7 @@
 
 <br>
 
-![Next MCU](https://mcu.esflowers.icu/img/preview.png)
+![Next MCU](https://esflowers.icu/_astro/mcu.BVvjR1Ux_3fN5X.webp)
 
 <br>
 
