@@ -1,4 +1,4 @@
-<p align="center"><b><code>NEXT MCU</code></b></p>
+<p align="center"><b>NEXT MCU</b></p>
 <p align="center"><a href="https://mcu.esflowers.icu/"><code>mcu.esflowers.icu</code></a></p>
 
 ![Next MCU](https://mcu.esflowers.icu/img/preview.png)
@@ -7,7 +7,7 @@
 
 - **HTML**, **CSS** & **JavaScript**.
 - **[PHP](https://www.php.net/ "php.net")** / General-purpose scripting language.
-- **[MCU-Countdown](https://github.com/DiljotSG/MCU-Countdown)** / An API for answering the question *When is the next MCU film?*.
+- **[MCU-Countdown](https://github.com/DiljotSG/MCU-Countdown)** / API for answering the question *When is the next MCU film?*
 
 ### Fonts
 
