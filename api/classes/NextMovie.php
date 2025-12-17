@@ -21,7 +21,7 @@
             $days = $this->days_until;
             return match(true){
                 $days === -1 => "Unknown",
-                $days === 0 => 'It opens today!!',
+                $days === 0 => 'It opens today!',
                 $days == 1  => 'Tomorrow is the premiere!',
                 $days < 7   => 'It premieres this week',
                 $days < 30  => "It opens this month, in $days days",
@@ -46,11 +46,15 @@
                 );
             }
 
+            $formattedDate = isset($data['release_date'])
+                ? (new DateTime($data['release_date']))->format('m/d/Y')
+                : 'Unknown';
+
             return new self(
                 $data["days_until"] ?? 0,
                 $data["title"] ?? "Unknown",
                 $data["following_production"] ?? [],
-                $data["release_date"] ?? "Unknown",
+                $formattedDate,
                 $data["poster_url"] ?? "",
                 $data["overview"] ?? "No overview available",
                 $data["type"] ?? "Unknown"
