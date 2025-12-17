@@ -12,7 +12,7 @@
     }
 
     if (!$next_movie) {
-        die("<h1>No more upcoming MCU movies or shows.</h1>");
+        die("<link rel='stylesheet' href='./style.css'><h1>No more upcoming MCU movies or shows.</h1>");
     }
 
     $movie = $next_movie->get_data();
@@ -28,22 +28,22 @@
 
     <main>
         <section class="col">
-            <img id="poster" class="poster" src="<?= $movie["poster_url"] ?>" alt="<?= "The next MCU film is " . $movie["title"]; ?>" crossorigin="anonymous" width="350" height="380" loading="lazy">
+            <img id="poster" class="poster" src="<?= $movie["poster_url"] ?>" alt="<?= "The next MCU movie is " . $movie["title"]; ?>" crossorigin="anonymous" width="350" height="380" loading="lazy">
         </section>
 
-        <hgroup class="col">
+        <aside class="col">
             <h1><?= $movie["title"]; ?></h1>
             <h2><?= $next_movie->get_until_messages(); ?></h2>
             <div class="flex flex-wrap gap-md my">
-                <div class="badge" title="Premiere">
+                <div class="tag" title="Premiere">
                     <?php render_template('iconCalendar') ?>
-                    <?= $movie["release_date"]; ?>
+                    <?= $next_movie->get_formatted_date() ?>
                 </div>
-                <div class="badge" title="Type">
+                <div class="tag" title="Type">
                     <?php render_template('iconMovie') ?>
                     <?= $movie["type"]; ?>
                 </div>
-                <button id="share" class="badge" title="Copy Link">
+                <button id="share" class="tag" title="Copy Link">
                     <?php render_template('iconLink') ?>
                     Share
                 </button>
@@ -64,7 +64,7 @@
                     </a>
                 <?php endif; ?>
             </div>
-        </hgroup>
+        </aside>
     </main>
 
     <canvas id="canvas"></canvas>
