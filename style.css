@@ -9,12 +9,16 @@
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('./static/fonts/BebasNeue.ttf');
+    src: url('./fonts/BebasNeue.ttf');
 }
 
 @font-face {
     font-family: 'Inter Tight';
-    src: url('./static/fonts/InterTight.ttf');
+    src: url('./fonts/InterTight.ttf');
+}
+
+@view-transition{
+    navigation: auto;
 }
 
 :root{
@@ -39,12 +43,12 @@ body{
     font-display: swap;
 }
 
-::selection {
+::selection{
     background: var(--brand);
     color: var(--white);
 }
 
-h1, h2 {
+h1, h2{
     font-weight: 700;
     margin-bottom: .5rem;
 }
@@ -66,7 +70,7 @@ h2{
 }
 
 p{
-    width: 37ch;
+    width: 35ch;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
@@ -84,7 +88,7 @@ section{
     justify-content: center;
 }
 
-hgroup{
+aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,17 +105,17 @@ svg{
     transition: .15s ease-in;
 }
 
-button {
+button{
     cursor: pointer;
     color: var(--secondary);
     transition: .15s ease-in;
 
-    &:hover {
+    &:hover{
         opacity: .8;
     }
 }
 
-.badge {
+.tag{
     font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 550;
@@ -160,6 +164,22 @@ button {
         &.prev{
             svg{
                 transform: rotate(180deg) translateX(3px);
+            }
+        }
+    }
+
+    &:visited{
+        color: var(--secondary);
+
+        &.next{
+            svg{
+                transform: translateX(0);
+            }
+        }
+
+        &.prev{
+            svg{
+                transform: rotate(180deg) translateX(0);
             }
         }
     }
