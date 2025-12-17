@@ -152,22 +152,6 @@ button{
         }
     }
 
-    &:visited{
-        color: var(--secondary);
-
-        &.next{
-            svg{
-                transform: translateX(0);
-            }
-        }
-
-        &.prev{
-            svg{
-                transform: rotate(180deg) translateX(0);
-            }
-        }
-    }
-
     &:hover{
         color: var(--brand);
 

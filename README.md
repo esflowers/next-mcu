@@ -18,6 +18,7 @@
 
 ### Colors
 
+\* **[Open preview](https://coolors.co/ffffff-ee171f-040309-141319 'coolors.co')**.
 - White / `#ffffff`.
 - Brand / `#ee171f`.
 - Primary / `#040309`.
