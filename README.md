@@ -1,7 +1,7 @@
 <p align="center"><b>NEXT MCU</b></p>
 <p align="center"><a href="https://mcu.esflowers.icu/"><code>mcu.esflowers.icu</code></a></p>
 
-![Next MCU](https://mcu.esflowers.icu/img/preview.png)
+![Next MCU](./img/image.png)
 
 ### Stack
 
