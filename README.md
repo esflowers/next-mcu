@@ -1,11 +1,10 @@
-<p align="center"><b>NEXT MCU</b></p>
+<h3 align="center"><b>NEXT MCU</b></h3>
 <p align="center"><a href="https://mcu.esflowers.icu/"><code>mcu.esflowers.icu</code></a></p>
 
 ![Next MCU](./img/image.png)
 
 ### Stack
 
-- **HTML**, **CSS** & **JavaScript**.
 - **[PHP](https://www.php.net/ "php.net")** / General-purpose scripting language.
 - **[MCU-Countdown](https://github.com/DiljotSG/MCU-Countdown)** / API for answering the question *When is the next MCU film?*
 - **[Iconoir](https://iconoir.com/ "iconoir.com")** / High-quality selection of free icons.
@@ -18,7 +17,8 @@
 
 ### Colors
 
-\* **[Open preview](https://coolors.co/ffffff-ee171f-040309-141319 'coolors.co')**.
+/ **[Preview](https://coolors.co/ffffff-ee171f-040309-141319 'coolors.co')**.
+
 - White / `#ffffff`.
 - Brand / `#ee171f`.
 - Primary / `#040309`.
